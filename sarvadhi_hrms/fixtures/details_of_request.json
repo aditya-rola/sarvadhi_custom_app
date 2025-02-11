@@ -1,0 +1,26 @@
+[
+ {
+  "date_of_requisition": "2025-02-11",
+  "details_of_request": "Salary Slip",
+  "docstatus": 0,
+  "doctype": "Details of Request",
+  "modified": "2025-02-11 11:51:56.737576",
+  "name": "fduledckoi",
+  "parent": "v6r41ih1bq",
+  "parentfield": "details_of_req",
+  "parenttype": "Document Request",
+  "reason_for_request": "For loan"
+ },
+ {
+  "date_of_requisition": "2025-02-11",
+  "details_of_request": "Salary Slip",
+  "docstatus": 0,
+  "doctype": "Details of Request",
+  "modified": "2025-02-11 11:56:09.789126",
+  "name": "26a139kl6u",
+  "parent": "DOC-REQ-2025-0001",
+  "parentfield": "details_of_req",
+  "parenttype": "Document Request",
+  "reason_for_request": "For loan"
+ }
+]
