@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-11 11:39:36.394681",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_of_request",
+  "reason_for_request",
+  "date_of_requisition"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_of_request",
+   "fieldtype": "Link",
+   "label": "Details of Request",
+   "options": "Emp Document"
+  },
+  {
+   "fieldname": "reason_for_request",
+   "fieldtype": "Small Text",
+   "label": "Reason for Request"
+  },
+  {
+   "fieldname": "date_of_requisition",
+   "fieldtype": "Date",
+   "label": "Date of Requisition"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-11 11:43:05.146265",
+ "modified_by": "Administrator",
+ "module": "Sarvadhi Hrms",
+ "name": "Details of Request",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
