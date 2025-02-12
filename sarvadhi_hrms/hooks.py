@@ -13,6 +13,9 @@ fixtures = [
     {"dt": "Emp Document", "filters": [], "or_filter": []},
     {"dt": "Custom HTML Block", "filters": [], "or_filter": []},
     {"dt": "Employee", "filters": [], "or_filter": []},
+    {"dt": "Department", "filters": [], "or_filter": []},
+    {"dt": "Employee Grade", "filters": [], "or_filter": []},
+    {"dt": "Branch", "filters": [], "or_filter": []},
 ]
 # required_apps = []
 

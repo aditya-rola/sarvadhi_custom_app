@@ -1,0 +1,11 @@
+[
+ {
+  "currency": "INR",
+  "default_base_pay": 20000.0,
+  "default_salary_structure": "Employee Salary Structure",
+  "docstatus": 0,
+  "doctype": "Employee Grade",
+  "modified": "2025-02-12 12:48:00.924536",
+  "name": "EG-1"
+ }
+]

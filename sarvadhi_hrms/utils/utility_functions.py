@@ -56,7 +56,7 @@ def get_upcoming_birthdays():
             "company": default_company,
             "status": "Active",
         },
-        fields=["name", "employee_name", "date_of_birth"],
+        fields=["name", "employee_name", "date_of_birth","designation"],
         order_by="date_of_birth asc"
     )
 
@@ -70,7 +70,8 @@ def get_upcoming_birthdays():
                 upcoming_birthdays.append({
                     "employee_name": emp["employee_name"],
                     "date_of_birth": birth_date.strftime("%d-%b"),
-                    "day_name": birth_date.strftime("%A")
+                    "day_name": birth_date.strftime("%A"),
+                    "designation": emp['designation']
                 })
 
     if upcoming_birthdays:
