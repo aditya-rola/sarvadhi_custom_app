@@ -8,9 +8,11 @@ app_license = "mit"
 # Apps
 # ------------------
 fixtures = [
-    {"dt": "Document Request", "filters": []},
-    {"dt": "Details of Request", "filters": []},
-    {"dt": "Emp Document", "filters": []},
+    {"dt": "Document Request", "filters": [], "or_filter": []},
+    {"dt": "Details of Request", "filters": [], "or_filter": []},
+    {"dt": "Emp Document", "filters": [], "or_filter": []},
+    {"dt": "Custom HTML Block", "filters": [], "or_filter": []},
+    {"dt": "Employee", "filters": [], "or_filter": []},
 ]
 # required_apps = []
 

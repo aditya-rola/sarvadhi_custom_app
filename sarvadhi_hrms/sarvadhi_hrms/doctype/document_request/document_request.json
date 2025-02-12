@@ -8,6 +8,9 @@
  "field_order": [
   "title",
   "requested_by",
+  "column_break_oqze",
+  "status",
+  "section_break_pffg",
   "details_of_req"
  ],
  "fields": [
@@ -32,11 +35,26 @@
    "fieldtype": "Table",
    "label": "Details of Request",
    "options": "Details of Request"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nApproved\nRejected\nIn Progress",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_oqze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_pffg",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-11 16:48:42.459226",
+ "modified": "2025-02-11 17:55:30.947480",
  "modified_by": "Administrator",
  "module": "Sarvadhi Hrms",
  "name": "Document Request",
