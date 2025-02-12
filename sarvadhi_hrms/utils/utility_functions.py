@@ -1,5 +1,5 @@
 import frappe
-from frappe.utils import today
+from frappe.utils import today ,nowdate, getdate, add_days
 from datetime import datetime
 
 @frappe.whitelist(allow_guest=True)
@@ -44,3 +44,36 @@ def get_upcoming_holidays():
         frappe.log_error(f"Error fetching holidays for company {default_company}: {str(e)}", "get_upcoming_holidays")
         return []
 
+
+@frappe.whitelist()
+def get_upcoming_birthdays():
+    """Fetch upcoming birthdays of users in the same company as the logged-in user."""
+
+    default_company = frappe.defaults.get_user_default("company")
+
+    birthdays = frappe.get_all("Employee",
+        filters={
+            "company": default_company,
+            "status": "Active",
+        },
+        fields=["name", "employee_name", "date_of_birth"],
+        order_by="date_of_birth asc"
+    )
+
+    upcoming_birthdays = []
+    today = getdate(nowdate())
+
+    for emp in birthdays:
+        if emp["date_of_birth"]:
+            birth_date = getdate(emp["date_of_birth"]).replace(year=today.year)
+            if birth_date >= today and birth_date <= add_days(today, 30):  # Get birthdays within the next 30 days
+                upcoming_birthdays.append({
+                    "employee_name": emp["employee_name"],
+                    "date_of_birth": birth_date.strftime("%d-%b"),
+                    "day_name": birth_date.strftime("%A")
+                })
+
+    if upcoming_birthdays:
+        return upcoming_birthdays
+    else:
+        return {"message": "No upcoming birthdays in the next 30 days."}

@@ -1,0 +1,46 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Td3ynj48-g\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Profile Card\",\"col\":4}},{\"id\":\"5Ef6DGSXLd\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"UpComing Birthdays\",\"col\":4}},{\"id\":\"fVWrMtJsfb\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"G3r8HOPg-9\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"UpComing Holidays\",\"col\":5}},{\"id\":\"nLCBuzOoKR\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"ToDo List\",\"col\":5}}]",
+ "creation": "2025-02-11 17:49:44.780963",
+ "custom_blocks": [
+  {
+   "custom_block_name": "UpComing Birthdays",
+   "label": "UpComing Birthdays"
+  },
+  {
+   "custom_block_name": "Profile Card",
+   "label": "Profile Card"
+  },
+  {
+   "custom_block_name": "UpComing Holidays",
+   "label": "UpComing Holidays"
+  },
+  {
+   "custom_block_name": "ToDo List",
+   "label": "ToDo List"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dashboard-list",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "My Desk",
+ "links": [],
+ "modified": "2025-02-12 11:23:05.915940",
+ "modified_by": "Administrator",
+ "module": "Sarvadhi Hrms",
+ "name": "My Desk",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "My Desk"
+}
